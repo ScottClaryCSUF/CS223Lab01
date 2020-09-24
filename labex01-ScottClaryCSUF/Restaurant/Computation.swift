@@ -26,6 +26,6 @@ func taxes ( subTotal : Double) -> Double
 }
 
 func total ( subTotal : Double,  tipPercentage : Double) -> Double{
-    return tip(subTotal : subTotal, tipPercentage : tipPercentage) + taxes(subTotal : subTotal)
+    return subTotal + tip(subTotal : subTotal, tipPercentage : tipPercentage) + taxes(subTotal : subTotal)
 }
 
